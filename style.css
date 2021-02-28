@@ -36,18 +36,29 @@ header {
     
 }
 
+#main-top p {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
 #main-bottom {
-    height: 450px;
-    background-color: greenyellow;
+    /*height: 450px;*/
+    background-color: white;
 }
 
 #main-bottom > h1,
 #main-bottom > div > * {
-    background-color: pink;
+    background-color:white;
 }
 
 #main-bottom > h1 {
-    height: 10%;
+    height: 5%;
+}
+
+#main-bottom > h5 {
+    height: 5%;
+    color: lightgray;
 }
 
 #main-bottom > div {
@@ -59,7 +70,7 @@ header {
 #main-bottom aside,
 #main-bottom article {
     height: 100%;
-    float: left; 
+    float: left;
 }
 
 #main-bottom aside {
@@ -82,7 +93,8 @@ header {
 
 footer {
     height: 80px;
-    background-color: blueviolet;
+    background-color: white;
+    text-align: center;
 }
 
 #logo-image {
@@ -111,6 +123,34 @@ header nav a {
 #nav-bar {
     height: 50px;
     margin-top: 20px;
+}
+
+article > img,
+aside > img {
+    width: 100%;
+}
+
+footer span {
+    color: red;
+}
+
+.main-img {
+    height: 150px;
+    border-radius: 10px;
+    background-position: center;
+    background-size: contain;
+}
+
+#main-bottom .clearfix :nth-child(1) > .main-img {
+    background-image: url(img/img-1.jpg);
+}
+
+#main-bottom  .clearfix :nth-child(2) > .main-img {
+    background-image: url(img/banner-2.jpg);
+}
+
+#main-bottom .clearfix :nth-child(3) > .main-img {
+    background-image: url(img/img-3.jpg);
 }
 
 
